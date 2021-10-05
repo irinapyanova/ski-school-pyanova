@@ -1,9 +1,50 @@
+/* montserrat-regular - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/montserrat-v18-latin_cyrillic-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v18-latin_cyrillic-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-500 - latin_cyrillic */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/montserrat-v18-latin_cyrillic-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v18-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* oswald-500 - latin_cyrillic */
+@font-face {
+  font-family: "Oswald";
+  font-style: normal;
+  font-weight: 500;
+  src: local(""),
+    url("../fonts/oswald-v40-latin_cyrillic-500.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/oswald-v40-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* general */
 body {
   color: #060d10;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 .about,
 .footer {
   color: #fff;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+/* header */
+.header {
+  background-color: #66d1ff;
 }
 .btn-header {
   font-size: 24px;
@@ -11,16 +52,28 @@ body {
 .phone {
   font-size: 28px;
 }
-.about-title,
-.lead-title {
+/* about */
+.about {
+  text-shadow: 1px 1px 2px #060d10;
+}
+.about-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   font-size: 60px;
   line-height: 89px;
 }
 .about-text {
   font-size: 32px;
   line-height: 39px;
+  font-weight: 400;
+}
+/* advantages */
+.advantages {
+  background-color: rgba(102, 209, 255, 0.1);
 }
 .advantages-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
   font-size: 48px;
   line-height: 80px;
 }
@@ -32,9 +85,23 @@ body {
   font-size: 26px;
   line-height: 36px;
 }
+/* lead */
+.lead-title {
+  font-family: "Oswald", sans-serif;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 80px;
+}
 .btn-lead {
   font-size: 36px;
   line-height: 44px;
+}
+.lead-img {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+/* footer */
+.footer {
+  background-color: #060d10;
 }
 .footer-caption {
   font-size: 20px;
