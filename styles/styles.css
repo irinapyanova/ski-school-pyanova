@@ -55,12 +55,14 @@ a {
 /* about */
 .about {
   text-shadow: 1px 1px 2px #060d10;
+  text-align: center;
 }
 .about-title {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 60px;
   line-height: 89px;
+  text-transform: uppercase;
 }
 .about-text {
   font-size: 32px;
@@ -76,6 +78,7 @@ a {
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
+  text-align: center;
 }
 .advantages-headline {
   font-size: 32px;
@@ -86,6 +89,9 @@ a {
   line-height: 36px;
 }
 /* lead */
+.lead {
+  text-align: center;
+}
 .lead-title {
   font-family: "Oswald", sans-serif;
   font-weight: 500;
