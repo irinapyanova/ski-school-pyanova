@@ -29,6 +29,10 @@
       url("../fonts/oswald-v40-latin_cyrillic-500.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
 /* general */
+* {
+  margin: 0;
+  padding: 0;
+}
 body {
   color: #060d10;
   font-family: "Montserrat", sans-serif;
@@ -42,20 +46,36 @@ a {
   text-decoration: none;
   color: inherit;
 }
+.container {
+  width: 1278px;
+  margin: 0 auto;
+}
 /* header */
 .header {
   background-color: #66d1ff;
 }
 .btn-header {
   font-size: 24px;
+  padding: 8px 41px;
+  background-color: #fff;
+  border-radius: 4px;
 }
 .phone {
+  margin: 39px 0;
   font-size: 28px;
 }
 /* about */
 .about {
   text-shadow: 1px 1px 2px #060d10;
   text-align: center;
+  background-image: url(../images/about-bg.jpg);
+  background-size: cover;
+  background-position: center;
+}
+.about-bg-fade {
+  padding-top: 240px;
+  padding-bottom: 260px;
+  background-color: rgba(6, 13, 16, 0.25);
 }
 .about-title {
   font-family: "Oswald", sans-serif;
@@ -72,8 +92,13 @@ a {
 /* advantages */
 .advantages {
   background-color: rgba(102, 209, 255, 0.1);
+  padding: 170px 0;
+}
+.advantages .container {
+  border-bottom: 1px solid rgba(6, 13, 16, 0.5);
 }
 .advantages-title {
+  margin-bottom: 100px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 48px;
@@ -81,6 +106,7 @@ a {
   text-align: center;
 }
 .advantages-headline {
+  padding-bottom: 25px;
   font-size: 32px;
   line-height: 53px;
 }
@@ -91,29 +117,55 @@ a {
 /* lead */
 .lead {
   text-align: center;
+  padding-top: 170px;
+  padding-bottom: 180px;
 }
 .lead-title {
+  padding-bottom: 60px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 48px;
   line-height: 80px;
+  text-transform: uppercase;
 }
 .btn-lead {
+  padding-bottom: 130px;
+  padding: 20px 107px 22px 108px;
+  border: 3px solid #060d10;
+  border-radius: 4px;
   font-size: 36px;
   line-height: 44px;
 }
 .lead-img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
+/* social icons */
+.social-link {
+  display: block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/icon-twitter.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.social-text {
+  font-size: 1px;
+  opacity: 0;
+}
+
 /* footer */
 .footer {
   background-color: #060d10;
 }
 .footer-caption {
+  padding-top: 38px;
+  padding-bottom: 40px;
   font-size: 20px;
   line-height: 33px;
 }
 .copyright {
+  padding-top: 43px;
+  padding-bottom: 46px;
   font-size: 18px;
   line-height: 22px;
 }
