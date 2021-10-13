@@ -54,6 +54,11 @@ a {
   width: 1278px;
 }
 
+.btn {
+  display: inline-block;
+  font-weight: 500;
+  border-radius: 4px;
+}
 /* header */
 
 .header {
@@ -69,15 +74,11 @@ a {
 }
 
 .btn-header {
-  display: inline-block;
   padding: 8px 41px;
   font-size: 24px;
-  font-weight: 500;
   line-height: 29px;
   background-color: #fff;
-  border-radius: 4px;
 }
-
 .phone {
   font-size: 28px;
   font-weight: 500;
@@ -90,7 +91,7 @@ a {
   text-align: center;
   color: #fff;
   text-shadow: 1px 1px 2px #060d10;
-  background-image: url(../images/about-bg.jpg);
+  background-image: url("../images/about-bg.jpg");
   background-size: cover;
   background-position: center;
 }
@@ -120,13 +121,8 @@ a {
 }
 
 /* advantages */
-.container-border {
-  width: 1278px;
-  padding-bottom: 170px;
-  border-bottom: 1px solid rgba(6, 13, 16, 0.5);
-}
 .advantages {
-  padding-top: 170px;
+  padding: 170px 0;
   background-color: rgba(102, 209, 255, 0.1);
 }
 
@@ -145,7 +141,7 @@ a {
 
 .advantages-title {
   margin: 0;
-  padding-bottom: 85px;
+  padding-bottom: 100px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
   font-size: 48px;
@@ -196,13 +192,10 @@ a {
 }
 
 .btn-lead {
-  display: inline-block;
   padding: 20px 107px 22px 108px;
-  font-weight: 500;
   font-size: 36px;
   line-height: 44px;
   border: 3px solid #060d10;
-  border-radius: 4px;
 }
 
 .images-wrap {
@@ -243,10 +236,10 @@ a {
   display: block;
   width: 40px;
   height: 40px;
-  background-image: url("../images/icon-twitter.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
+
 .social-text {
   font-size: 1px;
   opacity: 0;
