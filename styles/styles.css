@@ -99,7 +99,7 @@ a {
 .about-bg-fade {
   padding-top: 240px;
   padding-bottom: 260px;
-  background-color: rgba(6, 13, 16, 0.25);
+  background-color: rgba(6, 13, 16, .25);
 }
 
 .about-title {
@@ -123,7 +123,7 @@ a {
 /* advantages */
 .advantages {
   padding: 170px 0;
-  background-color: rgba(102, 209, 255, 0.1);
+  background-color: rgba(102, 209, 255, .1);
 }
 
 .advantages-list {
@@ -163,7 +163,7 @@ a {
 
 .advantages-text {
   margin: 0;
-  color: rgba(6, 12, 15, 0.8);
+  color: rgba(6, 12, 15, .8);
   font-size: 26px;
   font-weight: 400;
   line-height: 36px;
@@ -171,18 +171,26 @@ a {
 
 /* lead */
 .lead {
-  padding-top: 170px;
   padding-bottom: 180px;
   text-align: center;
   background-image: linear-gradient(
     195.35deg,
-    rgba(102, 209, 255, 0.1) 43.85%,
+    rgba(102, 209, 255, .1) 43.85%,
     rgba(0, 0, 0, 0) 43.86%
   );
 }
 
+.lead::before {
+  content: "";
+  display: inline-block;
+  width: 1278px;
+  height: 1px;
+  border-bottom: 1px solid rgba(6, 13, 16, .5);
+}
+
 .lead-title {
   display: block;
+  padding-top: 170px;
   padding-bottom: 60px;
   font-family: "Oswald", sans-serif;
   font-weight: 500;
@@ -192,7 +200,7 @@ a {
 }
 
 .btn-lead {
-  padding: 20px 107px 22px 108px;
+  padding: 20px 107px;
   font-size: 36px;
   line-height: 44px;
   border: 3px solid #060d10;
@@ -211,7 +219,7 @@ a {
 }
 
 .lead-img {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, .25);
 }
 
 /* social icons */
