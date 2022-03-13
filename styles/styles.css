@@ -278,7 +278,7 @@ a {
   height: 60px;
   background-color: #66d1ff;
   border-radius: 50%;
-  background-image: url("/images/arrow-up.png");
+  background-image: url("../images/arrow-up.png");
   background-repeat: no-repeat;
   background-position: center;
 }
