@@ -40,4 +40,5 @@ leadBtn.addEventListener('click', (e) => {
   dateInfo.style.display = 'block';
 });
 
-
+getDayInfo('08.03.2022');
+getDayInfo('28.02.2022');

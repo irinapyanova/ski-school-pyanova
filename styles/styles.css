@@ -281,6 +281,7 @@ a {
   background-image: url("../images/arrow-up.png");
   background-repeat: no-repeat;
   background-position: center;
+  cursor: pointer;
 }
 
 /* footer */
