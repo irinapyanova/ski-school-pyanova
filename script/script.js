@@ -36,7 +36,7 @@ function getDayInfo(date) {
 
 leadBtn.addEventListener('click', (e) => {
   e.preventDefault();
-  getDayInfo('07.03.2022');
+  getDayInfo('08.03.2022');
   dateInfo.style.display = 'block';
 });
 
